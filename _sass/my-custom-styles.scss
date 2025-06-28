@@ -1,0 +1,22 @@
+/* _sass/my-custom-styles.scss */
+
+// This targets the image itself within the theme's structure
+.site-avatar img {
+    border-radius: 50% !important; // Makes the image perfectly circular
+    overflow: hidden !important;   // Hides any parts of the image outside the circle
+    padding: 0 !important;         // Removes any padding the theme might apply
+    margin: 0 !important;          // Removes any margin the theme might apply
+    background: transparent !important; // Ensures no background from theme CSS
+}
+
+// This targets the container (link or div) that wraps the logo,
+// in case it has its own background or border causing the square effect.
+.site-header .wrapper .site-title a {
+    background: transparent !important; // Remove background color
+    border: none !important;            // Remove any borders
+    box-shadow: none !important;        // Remove any shadows
+    display: block !important;          // Ensure it's a block element for sizing
+    line-height: 0 !important;          // Remove extra line height that might add space
+    padding: 0 !important;
+    margin: 0 !important;
+}
